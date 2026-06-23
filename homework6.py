@@ -1,16 +1,14 @@
 import numpy as np
 
 def minimum_Fs(f):
-    
-    Fs = 0  # change this line
+    Fs = 2 * f
     return Fs
 
 def omega(f, Fs):
-    
-    omega = 0  # change this line
+    omega = 2 * np.pi * f / Fs
     return omega
 
 def pure_tone(omega, N):
-   
-    x = 0 # change this line
+    n = np.arange(N)
+    x = np.cos(omega * n)
     return x
